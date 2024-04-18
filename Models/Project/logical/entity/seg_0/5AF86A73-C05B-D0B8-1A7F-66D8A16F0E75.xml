@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5AF86A73-C05B-D0B8-1A7F-66D8A16F0E75" name="Zapas">
+<createdBy>Dan Krupa</createdBy>
+<createdTime>2018-11-30 16:48:54 UTC</createdTime>
+<ownerDesignName>Project</ownerDesignName>
+<engineerTo>
+<item key="F8D61CDB-BA37-51DE-459A-0B50984C27A9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_domaciho_hrace" id="6ECF3582-0576-5AB8-1EA0-0A147320DA10">
+<createdBy>Stanislav</createdBy>
+<createdTime>2019-04-07 19:05:53 UTC</createdTime>
+<generatorID>9BF654FE-242C-93CB-BFD5-1ECBE5EB3AC2</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<engineerTo>
+<item key="F8D61CDB-BA37-51DE-459A-0B50984C27A9" value="true"/>
+</engineerTo>
+<referedAttribute>4B8756FB-3BAB-15A0-75F5-8EE1BE030D02</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_hostujiciho_hrace" id="A787D26E-EC1D-3DC5-6911-02B502E9F8DD">
+<createdBy>Stanislav</createdBy>
+<createdTime>2019-04-07 19:06:00 UTC</createdTime>
+<generatorID>BF49A095-592D-6294-5CD6-5980AD4F13D6</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<engineerTo>
+<item key="F8D61CDB-BA37-51DE-459A-0B50984C27A9" value="true"/>
+</engineerTo>
+<referedAttribute>4B8756FB-3BAB-15A0-75F5-8EE1BE030D02</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sezona" id="A3B6A126-4DC5-EF54-C2E8-0AA5269AB242">
+<createdBy>Dan Krupa</createdBy>
+<createdTime>2018-11-30 17:15:27 UTC</createdTime>
+<ownerDesignName>Project</ownerDesignName>
+<engineerTo>
+<item key="F8D61CDB-BA37-51DE-459A-0B50984C27A9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>9 CHAR</dataTypeSize>
+<ownDataTypeParameters>9 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Liga" id="732FA081-9EC6-31EC-B8E0-B80DF4D3A514">
+<createdBy>Stanislav</createdBy>
+<createdTime>2019-04-07 19:06:20 UTC</createdTime>
+<generatorID>CD4CDD0D-427D-51C2-2986-A1F7BEBC0DF6</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<engineerTo>
+<item key="F8D61CDB-BA37-51DE-459A-0B50984C27A9" value="true"/>
+</engineerTo>
+<referedAttribute>12913162-8151-82FE-C20A-CF6D58ACD0A4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT035</logicalDatatype>
+<dataTypeSize>5 CHAR</dataTypeSize>
+<ownDataTypeParameters>5 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="skore_domaciho" id="348F362B-5076-98E1-94F3-647E338BEF49">
+<createdBy>Dan Krupa</createdBy>
+<createdTime>2018-11-30 16:55:07 UTC</createdTime>
+<ownerDesignName>Project</ownerDesignName>
+<engineerTo>
+<item key="F8D61CDB-BA37-51DE-459A-0B50984C27A9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="skore_hostujiciho" id="CC50606C-DC6A-D298-1C87-1DEF1129171F">
+<createdBy>Stanislav</createdBy>
+<createdTime>2019-04-07 19:03:09 UTC</createdTime>
+<ownerDesignName>Project</ownerDesignName>
+<engineerTo>
+<item key="F8D61CDB-BA37-51DE-459A-0B50984C27A9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="datum" id="AC8ADE9A-8FE7-7F43-3E52-10C601B05B13">
+<createdBy>Dan</createdBy>
+<createdTime>2019-04-12 19:54:26 UTC</createdTime>
+<ownerDesignName>Project</ownerDesignName>
+<engineerTo>
+<item key="F8D61CDB-BA37-51DE-459A-0B50984C27A9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B366B563-5762-170F-4C32-8C7456E3E881" name="Zápas PK">
+<createdBy>Dan Krupa</createdBy>
+<createdTime>2018-11-30 16:53:58 UTC</createdTime>
+<ownerDesignName>Project</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="F8D61CDB-BA37-51DE-459A-0B50984C27A9" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6ECF3582-0576-5AB8-1EA0-0A147320DA10</attributeRef>
+<attributeRef>A787D26E-EC1D-3DC5-6911-02B502E9F8DD</attributeRef>
+<attributeRef>A3B6A126-4DC5-EF54-C2E8-0AA5269AB242</attributeRef>
+<attributeRef>732FA081-9EC6-31EC-B8E0-B80DF4D3A514</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Hrac_druzstvo_rel" directorySegmentName="seg_0" id="D8117EE6-A707-8BA1-802F-72DE91704307">
+<createdBy>Dan Krupa</createdBy>
+<createdTime>2018-12-20 18:29:43 UTC</createdTime>
+<ownerDesignName>Project</ownerDesignName>
+<engineerTo>
+<item key="ABF75891-814D-FC35-719C-8023B06D2814" value="true"/>
+</engineerTo>
+<sourcePk>C55BD8D4-B391-E587-89B8-A062E197F63F</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1C939FEA-5C61-250C-5C38-B8C59DBC9451</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>12F49B37-FD58-9CD7-DCE5-9EC6C76DA10A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

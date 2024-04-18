@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="ECAD8748-74E8-0865-33D1-65D5046EB4B1" name="Liga">
+<createdBy>Dan Krupa</createdBy>
+<createdTime>2018-11-30 17:13:43 UTC</createdTime>
+<ownerDesignName>Project</ownerDesignName>
+<engineerTo>
+<item key="6388F856-2FE0-F69F-2FBF-9A0250BC3EB0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="12913162-8151-82FE-C20A-CF6D58ACD0A4">
+<createdBy>Dan Krupa</createdBy>
+<createdTime>2018-11-30 17:13:51 UTC</createdTime>
+<ownerDesignName>Project</ownerDesignName>
+<engineerTo>
+<item key="6388F856-2FE0-F69F-2FBF-9A0250BC3EB0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT035</logicalDatatype>
+<dataTypeSize>5 CHAR</dataTypeSize>
+<ownDataTypeParameters>5 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nazev" id="81807BF4-2B09-4CA7-A0F9-EA71C7AA224B">
+<createdBy>Dan Krupa</createdBy>
+<createdTime>2018-11-30 17:14:07 UTC</createdTime>
+<ownerDesignName>Project</ownerDesignName>
+<engineerTo>
+<item key="6388F856-2FE0-F69F-2FBF-9A0250BC3EB0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5319DE33-F0ED-ACD5-2D24-AC018ED85531" name="Liga PK">
+<createdBy>Dan Krupa</createdBy>
+<createdTime>2018-11-30 17:14:34 UTC</createdTime>
+<ownerDesignName>Project</ownerDesignName>
+<engineerTo>
+<item key="6388F856-2FE0-F69F-2FBF-9A0250BC3EB0" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>12913162-8151-82FE-C20A-CF6D58ACD0A4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

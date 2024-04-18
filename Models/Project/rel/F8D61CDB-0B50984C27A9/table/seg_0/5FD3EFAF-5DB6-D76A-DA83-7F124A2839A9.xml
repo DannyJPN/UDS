@@ -1,0 +1,153 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5FD3EFAF-5DB6-D76A-DA83-7F124A2839A9" name="Zapas">
+<createdBy>Stanislav</createdBy>
+<createdTime>2019-04-07 19:14:43 UTC</createdTime>
+<generatorID>5AF86A73-C05B-D0B8-1A7F-66D8A16F0E75</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_domaciho_hrace" id="47D6F086-9C28-0A62-2C4B-FE5EE8FB6A50">
+<createdBy>Stanislav</createdBy>
+<createdTime>2019-04-07 19:14:43 UTC</createdTime>
+<generatorID>6ECF3582-0576-5AB8-1EA0-0A147320DA10</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="18862A3A-E90D-6620-89C7-78CC10FC17E1" referredColumn="C06EA327-2F2E-8D36-8927-9792918B3058"/>
+</associations>
+</Column>
+<Column name="ID_hostujiciho_hrace" id="8505669F-1BE2-717E-540F-880B59A27309">
+<createdBy>Stanislav</createdBy>
+<createdTime>2019-04-07 19:14:43 UTC</createdTime>
+<generatorID>A787D26E-EC1D-3DC5-6911-02B502E9F8DD</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F8D83678-C650-6653-8B06-95A9DC953729" referredColumn="C06EA327-2F2E-8D36-8927-9792918B3058"/>
+</associations>
+</Column>
+<Column name="sezona" id="654A06CE-044D-A159-EEED-475888E4AC02">
+<createdBy>Stanislav</createdBy>
+<createdTime>2019-04-07 19:14:43 UTC</createdTime>
+<generatorID>A3B6A126-4DC5-EF54-C2E8-0AA5269AB242</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>9 CHAR</dataTypeSize>
+<ownDataTypeParameters>9 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Liga_ID" id="AE0CE782-B57B-EB54-F932-C0B6DFDDDED6">
+<createdBy>Stanislav</createdBy>
+<createdTime>2019-04-07 19:14:43 UTC</createdTime>
+<generatorID>732FA081-9EC6-31EC-B8E0-B80DF4D3A514</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT035</logicalDatatype>
+<dataTypeSize>5 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="83BF321B-A24A-8079-5971-D7382190A10C" referredColumn="F6D987A1-EA10-F5DD-78E4-FE73E9756205"/>
+</associations>
+</Column>
+<Column name="skore_domaciho" id="CF7282A1-B0A9-BF81-3F19-563DD9541E82">
+<createdBy>Stanislav</createdBy>
+<createdTime>2019-04-07 19:14:43 UTC</createdTime>
+<generatorID>348F362B-5076-98E1-94F3-647E338BEF49</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="skore_hostujiciho" id="87503B65-ED22-477C-59E2-AA03EC4A751C">
+<createdBy>Stanislav</createdBy>
+<createdTime>2019-04-07 19:14:43 UTC</createdTime>
+<generatorID>CC50606C-DC6A-D298-1C87-1DEF1129171F</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="datum" id="B07D3F18-F037-5631-57FD-290DA98C650D">
+<createdBy>Dan</createdBy>
+<createdTime>2019-04-12 19:54:43 UTC</createdTime>
+<generatorID>AC8ADE9A-8FE7-7F43-3E52-10C601B05B13</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="718D25FA-E874-948F-A92D-F158F10D2246" name="Zapas_PK">
+<createdBy>Stanislav</createdBy>
+<createdTime>2019-04-07 19:14:43 UTC</createdTime>
+<generatorID>B366B563-5762-170F-4C32-8C7456E3E881</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="47D6F086-9C28-0A62-2C4B-FE5EE8FB6A50"/>
+<colUsage columnID="8505669F-1BE2-717E-540F-880B59A27309"/>
+<colUsage columnID="654A06CE-044D-A159-EEED-475888E4AC02"/>
+<colUsage columnID="AE0CE782-B57B-EB54-F932-C0B6DFDDDED6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EF64DB10-5C85-8F26-4A8F-A3D14C83EE3B" name="Zapas_Hrac_FK">
+<createdBy>Stanislav</createdBy>
+<createdTime>2019-04-07 19:14:43 UTC</createdTime>
+<generatorID>9BF654FE-242C-93CB-BFD5-1ECBE5EB3AC2</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="47D6F086-9C28-0A62-2C4B-FE5EE8FB6A50"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="29C51810-93DB-B0D0-9B96-247E187C9F5E" name="Zapas_Hrac_FKv1">
+<createdBy>Stanislav</createdBy>
+<createdTime>2019-04-07 19:14:43 UTC</createdTime>
+<generatorID>BF49A095-592D-6294-5CD6-5980AD4F13D6</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8505669F-1BE2-717E-540F-880B59A27309"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C1FEB0BA-7FB7-412F-1349-00B4D3B53A82" name="Zapas_Liga_FK">
+<createdBy>Stanislav</createdBy>
+<createdTime>2019-04-07 19:14:43 UTC</createdTime>
+<generatorID>CD4CDD0D-427D-51C2-2986-A1F7BEBC0DF6</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AE0CE782-B57B-EB54-F932-C0B6DFDDDED6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

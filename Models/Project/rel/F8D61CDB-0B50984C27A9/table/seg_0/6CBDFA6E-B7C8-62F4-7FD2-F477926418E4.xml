@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6CBDFA6E-B7C8-62F4-7FD2-F477926418E4" name="Hrac">
+<createdBy>Stanislav</createdBy>
+<createdTime>2019-04-07 19:14:43 UTC</createdTime>
+<generatorID>1C939FEA-5C61-250C-5C38-B8C59DBC9451</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="C06EA327-2F2E-8D36-8927-9792918B3058">
+<createdBy>Stanislav</createdBy>
+<createdTime>2019-04-07 19:14:43 UTC</createdTime>
+<generatorID>4B8756FB-3BAB-15A0-75F5-8EE1BE030D02</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="jmeno" id="42F25D3A-B538-7181-7F73-851C8B4664E2">
+<createdBy>Stanislav</createdBy>
+<createdTime>2019-04-07 19:14:43 UTC</createdTime>
+<generatorID>7F5649D8-50AB-3195-CEFF-A4327F71AD41</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prijmeni" id="94FC7A87-15FD-C9F0-6643-3B2EC18F594A">
+<createdBy>Stanislav</createdBy>
+<createdTime>2019-04-07 19:14:43 UTC</createdTime>
+<generatorID>019086F5-B5E5-BA95-2B0D-53CD65EF88C7</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="datum_narozeni" id="8378A651-223F-1C2B-C8E0-0051F0C1E4BA">
+<createdBy>Stanislav</createdBy>
+<createdTime>2019-04-07 19:14:43 UTC</createdTime>
+<generatorID>15D82F01-A119-EF2C-E37C-6DA5C54E9A57</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefon" id="FD30320D-FE05-0EAC-A27B-6838AE08909E">
+<createdBy>Stanislav</createdBy>
+<createdTime>2019-04-07 19:14:43 UTC</createdTime>
+<generatorID>BF29CFE9-3D6B-FE55-7643-F0A09E70B041</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="F8816770-B569-9D92-E1D9-6488E5E3D883">
+<createdBy>Stanislav</createdBy>
+<createdTime>2019-04-07 19:14:43 UTC</createdTime>
+<generatorID>9952B034-19A5-B63B-E318-13458E70B3EB</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A0725105-FC66-DF4B-D8D5-2FE4F04C8D88" name="Hrac_PK">
+<createdBy>Stanislav</createdBy>
+<createdTime>2019-04-07 19:14:43 UTC</createdTime>
+<generatorID>C55BD8D4-B391-E587-89B8-A062E197F63F</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C06EA327-2F2E-8D36-8927-9792918B3058"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

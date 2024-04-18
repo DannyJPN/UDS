@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Druzstvo_hrac_rel" directorySegmentName="seg_0" id="2AB3181C-CD3D-5859-1EFC-9911FCA1EE0A">
+<createdBy>Dan Krupa</createdBy>
+<createdTime>2018-12-20 18:32:06 UTC</createdTime>
+<ownerDesignName>Project</ownerDesignName>
+<engineerTo>
+<item key="ABF75891-814D-FC35-719C-8023B06D2814" value="true"/>
+</engineerTo>
+<sourcePk>39EA6983-87B1-E17E-84F3-75C8470E8618</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>58010559-B67C-0F4F-8BCA-06BD20C2F9A4</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>12F49B37-FD58-9CD7-DCE5-9EC6C76DA10A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

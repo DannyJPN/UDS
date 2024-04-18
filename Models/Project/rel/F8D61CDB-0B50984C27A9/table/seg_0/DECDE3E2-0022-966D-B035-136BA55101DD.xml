@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DECDE3E2-0022-966D-B035-136BA55101DD" name="Hrac_druzstvo">
+<createdBy>Stanislav</createdBy>
+<createdTime>2019-04-07 19:14:43 UTC</createdTime>
+<generatorID>12F49B37-FD58-9CD7-DCE5-9EC6C76DA10A</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Hrac_ID" id="CABAF523-8161-8266-D675-C0AD9B8F7368">
+<createdBy>Stanislav</createdBy>
+<createdTime>2019-04-07 19:14:43 UTC</createdTime>
+<generatorID>92F459A9-B802-3C8D-2FAD-57031DDBBCDD</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="07B76C4F-FBDA-83F0-035B-68E721AD4700" referredColumn="C06EA327-2F2E-8D36-8927-9792918B3058"/>
+</associations>
+</Column>
+<Column name="Druzstvo_ID" id="EC735092-DB34-AE76-4E85-B6AF70B37593">
+<createdBy>Stanislav</createdBy>
+<createdTime>2019-04-07 19:14:43 UTC</createdTime>
+<generatorID>F9E5D441-0246-1BB7-52CF-614DBA4C84F5</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="78889480-29E5-7740-DD6F-20DE9F9CBBFE" referredColumn="07B700E6-C134-859E-66F3-A22F952AB5F6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="483256CA-F9FF-4A9B-145F-174F67D4606E" name="Hrac_druzstvo_PK">
+<createdBy>Stanislav</createdBy>
+<createdTime>2019-04-07 19:14:43 UTC</createdTime>
+<generatorID>F9BBC115-8FAD-E8BE-5843-9EB48ADDFEB8</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EC735092-DB34-AE76-4E85-B6AF70B37593"/>
+<colUsage columnID="CABAF523-8161-8266-D675-C0AD9B8F7368"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D6C4F919-B95C-282D-F3AE-3695A3AA13E0" name="Hrac_druzstvo_Druzstvo_FK">
+<createdBy>Stanislav</createdBy>
+<createdTime>2019-04-07 19:14:43 UTC</createdTime>
+<generatorID>2AB3181C-CD3D-5859-1EFC-9911FCA1EE0A</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EC735092-DB34-AE76-4E85-B6AF70B37593"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8E7725FF-6A8F-B1E5-F271-60F554DB09C4" name="Hrac_druzstvo_Hrac_FK">
+<createdBy>Stanislav</createdBy>
+<createdTime>2019-04-07 19:14:43 UTC</createdTime>
+<generatorID>D8117EE6-A707-8BA1-802F-72DE91704307</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CABAF523-8161-8266-D675-C0AD9B8F7368"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

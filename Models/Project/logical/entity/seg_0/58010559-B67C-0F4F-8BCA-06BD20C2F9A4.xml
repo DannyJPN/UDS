@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="58010559-B67C-0F4F-8BCA-06BD20C2F9A4" name="Druzstvo">
+<createdBy>Dan Krupa</createdBy>
+<createdTime>2018-11-30 16:31:22 UTC</createdTime>
+<ownerDesignName>Project</ownerDesignName>
+<engineerTo>
+<item key="6388F856-2FE0-F69F-2FBF-9A0250BC3EB0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="1E2B5AD2-3FAB-DE16-EDF6-B73C52622BC2">
+<createdBy>Dan Krupa</createdBy>
+<createdTime>2018-11-30 16:40:48 UTC</createdTime>
+<ownerDesignName>Project</ownerDesignName>
+<engineerTo>
+<item key="6388F856-2FE0-F69F-2FBF-9A0250BC3EB0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nazev" id="E00AF3F6-5FBB-9828-25B7-0C900943CF7A">
+<createdBy>Dan Krupa</createdBy>
+<createdTime>2018-11-30 16:41:27 UTC</createdTime>
+<ownerDesignName>Project</ownerDesignName>
+<engineerTo>
+<item key="6388F856-2FE0-F69F-2FBF-9A0250BC3EB0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>80 CHAR</dataTypeSize>
+<ownDataTypeParameters>80 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sezona" id="A11D2673-5B5A-74E2-CAD1-3BA9FE57364A">
+<createdBy>Dan Krupa</createdBy>
+<createdTime>2018-11-30 16:45:06 UTC</createdTime>
+<ownerDesignName>Project</ownerDesignName>
+<engineerTo>
+<item key="6388F856-2FE0-F69F-2FBF-9A0250BC3EB0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT035</logicalDatatype>
+<dataTypeSize>9 CHAR</dataTypeSize>
+<ownDataTypeParameters>9 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_oddilu" id="F373DDA1-E15A-9C3F-E6D4-6C54A8202525">
+<createdBy>Dan Krupa</createdBy>
+<createdTime>2018-11-30 17:19:04 UTC</createdTime>
+<generatorID>3EF5FBFC-3404-6D9B-3F24-01C89DAF9A99</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<engineerTo>
+<item key="6388F856-2FE0-F69F-2FBF-9A0250BC3EB0" value="true"/>
+</engineerTo>
+<referedAttribute>C8011C46-DF29-E5B9-A5F6-C7B03183EDB6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Ligy" id="8084E758-0531-CB40-B327-CF95E733EA09">
+<createdBy>Stanislav</createdBy>
+<createdTime>2019-04-07 18:59:47 UTC</createdTime>
+<generatorID>C7F9D94F-63B3-F719-BB67-42974845D2E1</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<engineerTo>
+<item key="6388F856-2FE0-F69F-2FBF-9A0250BC3EB0" value="true"/>
+</engineerTo>
+<referedAttribute>12913162-8151-82FE-C20A-CF6D58ACD0A4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT035</logicalDatatype>
+<dataTypeSize>5 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="39EA6983-87B1-E17E-84F3-75C8470E8618" name="Družstvo PK">
+<createdBy>Dan Krupa</createdBy>
+<createdTime>2018-11-30 16:40:56 UTC</createdTime>
+<ownerDesignName>Project</ownerDesignName>
+<engineerTo>
+<item key="6388F856-2FE0-F69F-2FBF-9A0250BC3EB0" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1E2B5AD2-3FAB-DE16-EDF6-B73C52622BC2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

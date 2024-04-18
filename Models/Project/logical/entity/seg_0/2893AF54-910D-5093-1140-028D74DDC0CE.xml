@@ -1,0 +1,141 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2893AF54-910D-5093-1140-028D74DDC0CE" name="Oddil">
+<createdBy>Dan Krupa</createdBy>
+<createdTime>2018-11-30 17:01:09 UTC</createdTime>
+<ownerDesignName>Project</ownerDesignName>
+<engineerTo>
+<item key="6388F856-2FE0-F69F-2FBF-9A0250BC3EB0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="C8011C46-DF29-E5B9-A5F6-C7B03183EDB6">
+<createdBy>Dan Krupa</createdBy>
+<createdTime>2018-11-30 17:01:18 UTC</createdTime>
+<ownerDesignName>Project</ownerDesignName>
+<engineerTo>
+<item key="6388F856-2FE0-F69F-2FBF-9A0250BC3EB0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nazev" id="0736C506-9C4F-2198-28E5-A33AB4E0BAB1">
+<createdBy>Dan Krupa</createdBy>
+<createdTime>2018-11-30 17:01:38 UTC</createdTime>
+<ownerDesignName>Project</ownerDesignName>
+<engineerTo>
+<item key="6388F856-2FE0-F69F-2FBF-9A0250BC3EB0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>80 CHAR</dataTypeSize>
+<ownDataTypeParameters>80 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="web" id="E7FFB429-8ABC-EDCA-48C1-A33A621A459C">
+<createdBy>Dan Krupa</createdBy>
+<createdTime>2018-12-06 20:52:55 UTC</createdTime>
+<ownerDesignName>Project</ownerDesignName>
+<engineerTo>
+<item key="6388F856-2FE0-F69F-2FBF-9A0250BC3EB0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="mesto" id="1E7DF780-3363-BD20-0D10-4141AFD346FD">
+<createdBy>Dan Krupa</createdBy>
+<createdTime>2018-12-13 10:53:14 UTC</createdTime>
+<ownerDesignName>Project</ownerDesignName>
+<engineerTo>
+<item key="6388F856-2FE0-F69F-2FBF-9A0250BC3EB0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="adresa" id="82C6AEC0-7837-D9C2-D887-131F84ADDB1C">
+<createdBy>Dan Krupa</createdBy>
+<createdTime>2018-12-13 10:53:41 UTC</createdTime>
+<ownerDesignName>Project</ownerDesignName>
+<engineerTo>
+<item key="6388F856-2FE0-F69F-2FBF-9A0250BC3EB0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefon_jednatele" id="8E534680-2D3F-649C-7B6D-34BF5579322E">
+<createdBy>Dan Krupa</createdBy>
+<createdTime>2018-12-13 10:54:56 UTC</createdTime>
+<ownerDesignName>Project</ownerDesignName>
+<engineerTo>
+<item key="6388F856-2FE0-F69F-2FBF-9A0250BC3EB0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email_jednatele" id="1D198D8D-E0FA-B16F-6964-8129088D7E00">
+<createdBy>Dan Krupa</createdBy>
+<createdTime>2018-12-13 10:55:23 UTC</createdTime>
+<ownerDesignName>Project</ownerDesignName>
+<engineerTo>
+<item key="6388F856-2FE0-F69F-2FBF-9A0250BC3EB0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="okres" id="3B4F09B2-156E-CF5D-BEFC-3947E12CD1CF">
+<createdBy>Dan Krupa</createdBy>
+<createdTime>2019-04-02 05:38:57 UTC</createdTime>
+<generatorID>0A4735D9-1E7A-33A3-26A8-DF101A6A088C</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<engineerTo>
+<item key="6388F856-2FE0-F69F-2FBF-9A0250BC3EB0" value="true"/>
+</engineerTo>
+<referedAttribute>769C3772-8B12-520F-32F2-B08DB07C8EE4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT035</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+<ownDataTypeParameters>2 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CD313F24-E247-5556-4789-0A5C851BF256" name="Oddíl PK">
+<createdBy>Dan Krupa</createdBy>
+<createdTime>2018-11-30 17:01:35 UTC</createdTime>
+<ownerDesignName>Project</ownerDesignName>
+<engineerTo>
+<item key="6388F856-2FE0-F69F-2FBF-9A0250BC3EB0" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C8011C46-DF29-E5B9-A5F6-C7B03183EDB6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

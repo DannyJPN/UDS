@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B7809431-5ADA-024A-11D4-A23B55713A54" name="okres">
+<createdBy>Stanislav</createdBy>
+<createdTime>2019-04-07 19:14:43 UTC</createdTime>
+<generatorID>D397BF63-F3F8-FE35-C04D-AF834CE0E5A7</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="zkratka" id="0DC39B01-8510-F54B-9497-1CCBFC5B379E">
+<createdBy>Stanislav</createdBy>
+<createdTime>2019-04-07 19:14:43 UTC</createdTime>
+<generatorID>769C3772-8B12-520F-32F2-B08DB07C8EE4</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT035</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+<ownDataTypeParameters>2 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazev" id="03D3F5BD-1366-754D-1691-6FE1C6A214A4">
+<createdBy>Stanislav</createdBy>
+<createdTime>2019-04-07 19:14:43 UTC</createdTime>
+<generatorID>2BCC465C-C9CD-1CD5-E8A5-520700D1FFBA</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Kraj_zkratka" id="3A13FE1E-8F7A-369C-0E2D-4EE4F5447E09">
+<createdBy>Stanislav</createdBy>
+<createdTime>2019-04-07 19:14:43 UTC</createdTime>
+<generatorID>EC738503-E599-88DF-979D-46D385660B54</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT035</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="397C3450-4772-2381-1C8D-AD069B6BEF68" referredColumn="C42B2FA0-0A68-39BF-D255-CA7123A40E17"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9A28F794-A837-D724-560A-8C172E51C743" name="okres_PK">
+<createdBy>Stanislav</createdBy>
+<createdTime>2019-04-07 19:14:43 UTC</createdTime>
+<generatorID>231001B7-39B8-ECA5-BD3D-268BAB1C28DB</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0DC39B01-8510-F54B-9497-1CCBFC5B379E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D2A8B9D5-5270-3D6F-F976-0F85FDBAE4B4" name="okres_Kraj_FK">
+<createdBy>Stanislav</createdBy>
+<createdTime>2019-04-07 19:14:43 UTC</createdTime>
+<generatorID>DF50748B-E228-7F1E-8C3C-483680DE0828</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3A13FE1E-8F7A-369C-0E2D-4EE4F5447E09"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

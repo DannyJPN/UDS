@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="18862A3A-E90D-6620-89C7-78CC10FC17E1" containerWithKeyObject="5FD3EFAF-5DB6-D76A-DA83-7F124A2839A9" localFKIndex="EF64DB10-5C85-8F26-4A8F-A3D14C83EE3B" name="Zapas_Hrac_FK">
+<createdBy>Stanislav</createdBy>
+<createdTime>2019-04-07 19:14:43 UTC</createdTime>
+<generatorID>9BF654FE-242C-93CB-BFD5-1ECBE5EB3AC2</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<referredTableLongName>Hrac</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6CBDFA6E-B7C8-62F4-7FD2-F477926418E4</referredTableID>
+<keyObject>A0725105-FC66-DF4B-D8D5-2FE4F04C8D88</keyObject>
+<referredKeyID>A0725105-FC66-DF4B-D8D5-2FE4F04C8D88</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

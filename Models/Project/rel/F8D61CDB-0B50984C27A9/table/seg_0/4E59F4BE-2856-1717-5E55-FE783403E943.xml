@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4E59F4BE-2856-1717-5E55-FE783403E943" name="Druzstvo">
+<createdBy>Stanislav</createdBy>
+<createdTime>2019-04-07 19:14:43 UTC</createdTime>
+<generatorID>58010559-B67C-0F4F-8BCA-06BD20C2F9A4</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="07B700E6-C134-859E-66F3-A22F952AB5F6">
+<createdBy>Stanislav</createdBy>
+<createdTime>2019-04-07 19:14:43 UTC</createdTime>
+<generatorID>1E2B5AD2-3FAB-DE16-EDF6-B73C52622BC2</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazev" id="6D41099F-2F10-4A2B-8518-757F01642269">
+<createdBy>Stanislav</createdBy>
+<createdTime>2019-04-07 19:14:43 UTC</createdTime>
+<generatorID>E00AF3F6-5FBB-9828-25B7-0C900943CF7A</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>80 CHAR</dataTypeSize>
+<ownDataTypeParameters>80 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sezona" id="1D0A6FF4-A105-33A4-2DBF-844711817012">
+<createdBy>Stanislav</createdBy>
+<createdTime>2019-04-07 19:14:43 UTC</createdTime>
+<generatorID>A11D2673-5B5A-74E2-CAD1-3BA9FE57364A</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT035</logicalDatatype>
+<dataTypeSize>9 CHAR</dataTypeSize>
+<ownDataTypeParameters>9 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Oddil_ID" id="66E38B32-8EE9-620F-BA25-12BB491058AF">
+<createdBy>Stanislav</createdBy>
+<createdTime>2019-04-07 19:14:43 UTC</createdTime>
+<generatorID>F373DDA1-E15A-9C3F-E6D4-6C54A8202525</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F4C889EA-C23A-298C-28F3-86ADAB54A138" referredColumn="0F7D1F70-813A-0B5E-6944-57B784E961D1"/>
+</associations>
+</Column>
+<Column name="Liga_ID" id="297D91D1-4F92-6CD7-0637-E2C39471F37D">
+<createdBy>Stanislav</createdBy>
+<createdTime>2019-04-07 19:14:43 UTC</createdTime>
+<generatorID>8084E758-0531-CB40-B327-CF95E733EA09</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT035</logicalDatatype>
+<dataTypeSize>5 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B5B87A2F-E196-A174-A380-E75D3C6BB174" referredColumn="F6D987A1-EA10-F5DD-78E4-FE73E9756205"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E3E356BF-22CE-9721-9E94-AD626C46D4A0" name="Druzstvo_PK">
+<createdBy>Stanislav</createdBy>
+<createdTime>2019-04-07 19:14:43 UTC</createdTime>
+<generatorID>39EA6983-87B1-E17E-84F3-75C8470E8618</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="07B700E6-C134-859E-66F3-A22F952AB5F6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7BC6392E-2961-18F6-1D51-B9C4013D13DB" name="Druzstvo_Liga_FK">
+<createdBy>Stanislav</createdBy>
+<createdTime>2019-04-07 19:14:43 UTC</createdTime>
+<generatorID>C7F9D94F-63B3-F719-BB67-42974845D2E1</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="297D91D1-4F92-6CD7-0637-E2C39471F37D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="74B3193A-1E18-8285-DFC3-F63177AE2B40" name="Druzstvo_Oddil_FK">
+<createdBy>Stanislav</createdBy>
+<createdTime>2019-04-07 19:14:43 UTC</createdTime>
+<generatorID>3EF5FBFC-3404-6D9B-3F24-01C89DAF9A99</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="66E38B32-8EE9-620F-BA25-12BB491058AF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

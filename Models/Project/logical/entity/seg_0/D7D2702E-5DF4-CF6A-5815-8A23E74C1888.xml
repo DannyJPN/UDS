@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D7D2702E-5DF4-CF6A-5815-8A23E74C1888" name="Druzstvo_liga">
+<createdBy>Dan Krupa</createdBy>
+<createdTime>2018-12-20 18:25:38 UTC</createdTime>
+<ownerDesignName>Project</ownerDesignName>
+<engineerTo>
+<item key="75AC9F41-CACF-7ACA-BF38-778B8DF0260D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="F7DCDC82-ED59-4235-5852-7F3A3D4C6D33">
+<createdBy>Dan Krupa</createdBy>
+<createdTime>2018-12-20 18:25:49 UTC</createdTime>
+<ownerDesignName>Project</ownerDesignName>
+<engineerTo>
+<item key="75AC9F41-CACF-7ACA-BF38-778B8DF0260D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sezona_platnosti" id="1580BD73-BBAD-E0ED-BBBE-DA5F495965DA">
+<createdBy>Dan Krupa</createdBy>
+<createdTime>2018-12-20 18:27:27 UTC</createdTime>
+<ownerDesignName>Project</ownerDesignName>
+<engineerTo>
+<item key="75AC9F41-CACF-7ACA-BF38-778B8DF0260D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT035</logicalDatatype>
+<dataTypeSize>9 CHAR</dataTypeSize>
+<ownDataTypeParameters>9 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID1" id="1AF9957D-F2F3-2127-4E35-47C501885030">
+<createdBy>Dan Krupa</createdBy>
+<createdTime>2018-12-20 18:32:51 UTC</createdTime>
+<generatorID>DB392633-0EA0-522B-FBEC-249E83609366</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<engineerTo>
+<item key="75AC9F41-CACF-7ACA-BF38-778B8DF0260D" value="true"/>
+</engineerTo>
+<referedAttribute>1E2B5AD2-3FAB-DE16-EDF6-B73C52622BC2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID2" id="C4EB80B7-F102-6917-58DD-EB43B36C3633">
+<createdBy>Dan Krupa</createdBy>
+<createdTime>2018-12-20 18:33:43 UTC</createdTime>
+<generatorID>15C26521-4420-C5B4-0AB3-BFD3643A0154</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<engineerTo>
+<item key="75AC9F41-CACF-7ACA-BF38-778B8DF0260D" value="true"/>
+</engineerTo>
+<referedAttribute>12913162-8151-82FE-C20A-CF6D58ACD0A4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT035</logicalDatatype>
+<dataTypeSize>5 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CCF43ED9-937B-E733-4D98-B0E739E6CE0E" name="Druzstvo_liga PK">
+<createdBy>Dan Krupa</createdBy>
+<createdTime>2018-12-20 18:26:00 UTC</createdTime>
+<ownerDesignName>Project</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="75AC9F41-CACF-7ACA-BF38-778B8DF0260D" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F7DCDC82-ED59-4235-5852-7F3A3D4C6D33</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

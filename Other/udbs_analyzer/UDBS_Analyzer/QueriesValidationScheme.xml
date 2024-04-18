@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Groups>
+	<!--TODO: Neměly by existovat dva dotazy, které se liší jen v hodnotě nějakého predikátu-->
+  <Group Id="1">
+    <Description>Výpis tabulek, práce s hodnotami a setřízení</Description>
+    <DescriptionEn>not translated</DescriptionEn>
+    <Count>4</Count>
+    <MaxScore>2</MaxScore>
+    <Validation>
+      <Rule type="exact" count="0" description="Žádný dotaz nesmí obsahovat * za SELECT (je přípustné jen v agregačních funkcích).">
+        <Syntax>/SelectedColumns/@AllColumns</Syntax>
+      </Rule>
+      <Rule type="min" count="2" description="Minimálně ve dvou dotazech se musí nacházet aritmetická operace nebo funkce.">
+        <Or>
+          <Syntax>//@BinaryOperation['+' or '-' or '*' or '/' or '%']</Syntax>
+          <Syntax>//@ScalarFunction</Syntax>
+        </Or>
+      </Rule>
+      <Rule type="min" count ="2" description="Alespoň dva dotazy musí obsahovat třízení.">
+        <Syntax>///@OrderedTableSource</Syntax>
+      </Rule>
+      <Rule type="min" count="1" description="Alespoň jeden dotaz musí třídit podle vypočtené hodnoty (kritérium v ORDER BY nebude atribut tabulky).">
+        <ComputedOrderByRule/>
+      </Rule>
+      <Rule type="min" count="1" description="Alespoň jeden dotaz musí obsahovat sestupné třízení.">
+        <Syntax>//@OrderExpression['DESC']</Syntax>
+      </Rule>
+    </Validation>
+  </Group>
+  <Group Id="2">
+    <Description>Výběr řádků</Description>
+    <DescriptionEn>not translated</DescriptionEn>
+    <Count>4</Count>
+    <MaxScore>2</MaxScore>
+    <Validation>
+      <Rule type="exact" count="0" description="Žádný dotaz nesmí obsahovat * za SELECT (je přípustné jen v agregačních funkcích).">
+        <Syntax>/SelectedColumns/@AllColumns</Syntax>
+      </Rule>
+      <Rule type="all" description="Všechny dotazy musí obsahovat klauzuli WHERE.">
+        <Syntax>//WhereCondition</Syntax>  
+      </Rule>
+      <Rule type="min" count="1" description="Alespoň jeden dotaz musí kombinovat operátory OR a AND.">
+        <And>
+          <Syntax>//@BinaryOperation['AND']</Syntax>
+          <Syntax>//@BinaryOperation['OR']</Syntax>
+        </And>
+      </Rule>
+      <Rule type="min" count="1" description="Minimálně jeden dotaz musí obsahovat negaci NOT.">
+        <Syntax>//@UnaryOperation['NOT']</Syntax>
+      </Rule>
+      <Rule type="min" count="1" description="Minimálně v jednom dotaze musí být použitý operátor LIKE s využitím regulárního výrazu.">
+        <Syntax>///@BinaryOperation['Like' AND /Right@StringConstant['*%*' OR '*_*']]</Syntax>        
+      </Rule>
+      <Rule type="min" count="1" description="Minimálně jeden dotaz bude obsahovat aritmetickou operaci nebo funkci.">
+        <Or>
+          <Syntax>//@BinaryOperation['+' OR '-' OR '*' OR '/' OR '%']</Syntax>
+          <Syntax>//@ScalarFunction</Syntax>
+        </Or>
+      </Rule>
+    </Validation>
+  </Group>
+  <Group Id="3">
+    <Description>Množinové operace a poddotazy v podmínce</Description>
+    <DescriptionEn>not translated</DescriptionEn>
+    <Count>4</Count>
+    <MaxScore>2</MaxScore>
+    <Validation>
+      <Rule type="exact" count="0" description="Žádný dotaz nesmí obsahovat * za SELECT (je přípustné jen v agregačních funkcích).">
+        <Syntax>/SelectedColumns/@AllColumns</Syntax>
+      </Rule>
+      <Rule type="all" description="Každý dotaz bude vracet stejný výsledek, ale každý dotaz bude zapsán pomocí jiné konstrukce.">
+        <DistinctConstruction/>
+      </Rule>      
+    </Validation>
+  </Group>
+  <Group Id="4">
+    <Description>Agregační funkce a shlukování</Description>
+    <DescriptionEn>not translated</DescriptionEn>
+    <Count>4</Count>
+    <MaxScore>3</MaxScore>
+    <Validation>
+      <Rule type="all" description="Ve všech dotazech musí být použita agregační funkce.">
+        <Syntax>//@ScalarFunction['AVG' or 'SUM' or 'COUNT' or 'MIN' or 'MAX']</Syntax>        
+      </Rule>
+      <Rule type="min" count="3" description="Alespoň ve třech dotazech musí být použito seskupení dat pomocí GROUP BY.">
+        <Syntax>//GroupByExpressions</Syntax>
+      </Rule>
+      <Rule type="min" count="1" description="Minimálně v jednom dotaze musí být použita klauzule HAVING.">
+        <Syntax>//HavingCondition</Syntax>
+      </Rule>
+    </Validation>
+  </Group>
+  <Group Id="5">
+    <Description>Spojení tabulek a agregační funkce</Description>
+    <DescriptionEn>not translated</DescriptionEn>
+    <Count>4</Count>
+    <MaxScore>3</MaxScore>
+    <Validation>
+      <Rule type="exact" count="0" description="Žádný dotaz nesmí obsahovat * za SELECT (je přípustné jen v agregačních funkcích).">
+        <Syntax>/SelectedColumns/@AllColumns</Syntax>
+      </Rule>
+      <Rule type="exact" count="1" description="První dotaz musí být napsán pomocí JOIN, druhý pomocí IN, oba musí vracet stejný výsledek.">
+        <JoinIn/>
+      </Rule>
+      <Rule type="at" index="3" description="Třetí dotaz musí obsahovat vnější spojení v kombinaci s GROUP BY.">
+        <And>
+          <Syntax>//@Join['LEFT' or 'RIGHT']</Syntax>
+          <Syntax>//GroupByExpressions</Syntax>
+        </And>
+      </Rule>
+      <Rule type="at" index="4" description="Poslední dotaz musí obsahovat vnější spojení v kombinaci s GROUP BY a klauzulí WHERE">
+        <And>
+          <Syntax>//@Join['LEFT' or 'RIGHT']</Syntax>
+          <Syntax>//GroupByExpressions</Syntax>
+          <Syntax>//WhereCondition</Syntax>
+        </And>
+      </Rule>
+      <Rule type="min" count="1" description="Alespoň u jednoho dotazu s vnějším spojením musí být použita agregační funkce.">
+        <And>
+          <Syntax>//@ScalarFunction['AVG' or 'SUM' or 'COUNT' or 'MIN' or 'MAX']</Syntax>
+          <Syntax>//@Join['LEFT' or 'RIGHT']</Syntax>
+        </And>
+      </Rule>
+    </Validation>
+  </Group>
+  <Group Id="6">
+    <Description>Komplikovanější dotazy kombinující více operací</Description>
+    <DescriptionEn>not translated</DescriptionEn>
+    <Count>2</Count>
+    <MaxScore>3</MaxScore>
+    <Validation>
+      <Rule type="exact" count="0" description="Žádný dotaz nesmí obsahovat * za SELECT (je přípustné jen v agregačních funkcích).">
+        <Syntax>/SelectedColumns/@AllColumns</Syntax>
+      </Rule>
+      <Rule type="all" description="Každý dotaz musí obsahovat poddotaz nebo vnořený dotaz za SELECT nebo FROM.">
+        <Syntax>///@Query//@Query</Syntax>
+      </Rule>
+    </Validation>
+  </Group>
+</Groups>

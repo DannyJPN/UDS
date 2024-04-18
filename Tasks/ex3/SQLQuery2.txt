@@ -1,0 +1,112 @@
+select v.jmeno from vyrobek v
+join koupil k on v.vid = k.vID
+where rok = 2009
+
+select v.jmeno from vyrobek v where v.vid in(
+select k.vID from koupil k where rok = 2009)
+
+
+
+
+--___________________________________________________
+select v.jmeno from vyrobek v where v.vID  in(select k.vID from koupil k where k.login = 'vinetu') and v.vID in(select k.vID from koupil k where k.login = 'pepik')
+
+
+select k.vID from koupil k where k.login = 'vinetu' 
+select k.vID from koupil k where k.login = 'pepik' 
+
+select v.jmeno from vyrobek v where v.vID in
+(select k.vID from koupil k where k.login = 'vinetu') intersect
+select v.jmeno from vyrobek v where v.vID in
+(select k.vID from koupil k where k.login = 'pepik' )
+
+--___________________________________________________________
+
+select v.jmeno from vyrobek v where v.vID in(select k.vID from koupil k where k.login = 'vinetu') and v.vID not in(select k.vID from koupil k where k.login = 'pepik')
+
+select v.jmeno from vyrobek v where v.vID in
+(select k.vID from koupil k where k.login = 'vinetu') except
+select v.jmeno from vyrobek v where v.vID in
+(select k.vID from koupil k where k.login = 'pepik' )
+
+--____________________________________________________________
+
+
+
+select v.jmeno from vyrobek v where v.vid not in(
+select k.vid from koupil k)
+
+
+
+
+(select v.jmeno from vyrobek v where v.vID in
+(select k.vID from koupil k where k.login = 'vinetu') except
+select v.jmeno from vyrobek v where v.vID in
+(select k.vID from koupil k where k.login = 'pepik' )
+)union(
+select v.jmeno from vyrobek v where v.vID in
+(select k.vID from koupil k where k.login = 'pepik') except
+select v.jmeno from vyrobek v where v.vID in
+(select k.vID from koupil k where k.login = 'vinetu' )
+)
+
+(select v.jmeno from vyrobek v where v.vID in(select k.vID from koupil k where k.login = 'vinetu') and v.vID not in(select k.vID from koupil k where k.login = 'pepik'))
+union
+(select v.jmeno from vyrobek v where v.vID in(select k.vID from koupil k where k.login = 'pepik') and v.vID not in(select k.vID from koupil k where k.login = 'vinetu'))
+
+select v.jmeno from vyrobek v where v.vID in
+(select k.vID from koupil k where k.login = 'vinetu' or k.login = 'pepik') and v.vID not in(
+select v.vid from vyrobek v where v.vID  in(select k.vID from koupil k where k.login = 'vinetu') and v.vID in(select k.vID from koupil k where k.login = 'pepik'))
+--_____________________________________________________________
+
+
+select v.jmeno from vyrobek v where v.vID in(
+select k.vid from koupil k where k.rok between 2007 and 2009 ) and v.vID not in(
+select k.vid from koupil k where k.rok not between 2007 and 2009 )
+--_________________________________________________________________
+
+
+select v.jmeno from vyrobek v where v.vid in(
+select k.vid from koupil k where k.login in(
+select u.login from uzivatel u where u.mesto = 'Ostrava' or u.mesto = 'Brno')) and v.vid not in(
+select k.vid from koupil k where k.login in(
+select u.login from uzivatel u where not(u.mesto = 'Ostrava' or u.mesto = 'Brno')))
+--_________________________________________________________________
+
+select * from koupil where koupil.vID in (4,5,7,8,9)
+select * from vyrobek where vyrobek.vID in (4,5,7,8,9)
+
+select v.vID, v.jmeno from vyrobek v where v.vID in
+(
+select v.vid from vyrobek v
+join koupil k on k.vid = v.vid and abs(k.cena-v.aktualni_cena) <= 50
+) and v.vID not in (
+select v.vid from vyrobek v
+join koupil k on k.vid = v.vid and abs(k.cena-v.aktualni_cena) > 50
+)
+
+--_______________________________________________________________________
+
+
+select u1.login,u2.login,u1.rok_narozeni,u2.rok_narozeni from uzivatel u1,uzivatel u2  where u1.rok_narozeni < u2.rok_narozeni 
+
+
+select distinct u1.login,u2.login,u1.rok_narozeni,u2.rok_narozeni,k1.vID,k2.vID
+from koupil k1 
+join koupil k2 on k1.vID = k2.vid and k1.login < k2.login 
+join uzivatel u1 on k1.login = u1.login
+join uzivatel u2 on k2.login = u2.login
+where u1.rok_narozeni != u2.rok_narozeni 
+
+
+
+
+
+
+
+
+
+
+
+
+

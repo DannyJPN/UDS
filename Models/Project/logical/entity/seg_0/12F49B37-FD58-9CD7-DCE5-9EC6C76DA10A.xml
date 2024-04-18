@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="12F49B37-FD58-9CD7-DCE5-9EC6C76DA10A" name="Hrac_druzstvo">
+<createdBy>Dan Krupa</createdBy>
+<createdTime>2018-12-20 18:20:41 UTC</createdTime>
+<ownerDesignName>Project</ownerDesignName>
+<engineerTo>
+<item key="DE5DA952-A5C5-D0AE-C64D-F40DF5CF3D76" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="IDhrace" id="92F459A9-B802-3C8D-2FAD-57031DDBBCDD">
+<createdBy>Dan Krupa</createdBy>
+<createdTime>2018-12-20 18:29:43 UTC</createdTime>
+<generatorID>D8117EE6-A707-8BA1-802F-72DE91704307</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<engineerTo>
+<item key="DE5DA952-A5C5-D0AE-C64D-F40DF5CF3D76" value="true"/>
+</engineerTo>
+<referedAttribute>4B8756FB-3BAB-15A0-75F5-8EE1BE030D02</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IDdruzstva" id="F9E5D441-0246-1BB7-52CF-614DBA4C84F5">
+<createdBy>Dan Krupa</createdBy>
+<createdTime>2018-12-20 18:32:06 UTC</createdTime>
+<generatorID>2AB3181C-CD3D-5859-1EFC-9911FCA1EE0A</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<engineerTo>
+<item key="DE5DA952-A5C5-D0AE-C64D-F40DF5CF3D76" value="true"/>
+</engineerTo>
+<referedAttribute>1E2B5AD2-3FAB-DE16-EDF6-B73C52622BC2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F9BBC115-8FAD-E8BE-5843-9EB48ADDFEB8" name="Hrac_druzstvo PK">
+<createdBy>Dan Krupa</createdBy>
+<createdTime>2018-12-20 18:21:19 UTC</createdTime>
+<ownerDesignName>Project</ownerDesignName>
+<engineerTo>
+<item key="DE5DA952-A5C5-D0AE-C64D-F40DF5CF3D76" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F9E5D441-0246-1BB7-52CF-614DBA4C84F5</attributeRef>
+<attributeRef>92F459A9-B802-3C8D-2FAD-57031DDBBCDD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

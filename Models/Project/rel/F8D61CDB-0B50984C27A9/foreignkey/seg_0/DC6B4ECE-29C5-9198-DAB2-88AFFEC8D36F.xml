@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DC6B4ECE-29C5-9198-DAB2-88AFFEC8D36F" containerWithKeyObject="2A2CB325-80B7-11C2-AE73-7ACB9D2ACE55" localFKIndex="0E109013-C95B-9367-9622-BB85F7890811" name="Oddil_okres_FK">
+<createdBy>Stanislav</createdBy>
+<createdTime>2019-04-07 19:14:43 UTC</createdTime>
+<generatorID>0A4735D9-1E7A-33A3-26A8-DF101A6A088C</generatorID>
+<ownerDesignName>Project</ownerDesignName>
+<referredTableLongName>okres</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B7809431-5ADA-024A-11D4-A23B55713A54</referredTableID>
+<keyObject>9A28F794-A837-D724-560A-8C172E51C743</keyObject>
+<referredKeyID>9A28F794-A837-D724-560A-8C172E51C743</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>zkratka</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

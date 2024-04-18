@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Liga_druzstvo_rel" directorySegmentName="seg_0" id="15C26521-4420-C5B4-0AB3-BFD3643A0154">
+<createdBy>Dan Krupa</createdBy>
+<createdTime>2018-12-20 18:33:43 UTC</createdTime>
+<ownerDesignName>Project</ownerDesignName>
+<engineerTo>
+<item key="75AC9F41-CACF-7ACA-BF38-778B8DF0260D" value="true"/>
+</engineerTo>
+<sourcePk>5319DE33-F0ED-ACD5-2D24-AC018ED85531</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>ECAD8748-74E8-0865-33D1-65D5046EB4B1</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D7D2702E-5DF4-CF6A-5815-8A23E74C1888</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,42 @@
+select  distinct uzivatel.login,vyrobek.jmeno from uzivatel,koupil,vyrobek where uzivatel.mesto = 'Ostrava' and uzivatel.login = koupil.login and koupil.vID = vyrobek.vID order by uzivatel.login
+--ekvivalentní: select distinct uzivatel.login,vyrobek.jmeno from uzivatel join koupil on uzivatel.login = koupil.login join vyrobek on vyrobek.vid = koupil.vid where uzivatel.mesto = 'Ostrava'
+
+select distinct uzivatel.login,koupil.vID,koupil.cena from uzivatel,koupil where koupil.cena < 1440 and uzivatel.login = koupil.login order by uzivatel.login
+
+select  uzivatel.login,koupil.vID,vyrobek.jmeno from uzivatel,koupil,vyrobek where uzivatel.login = koupil.login and koupil.vID = vyrobek.vID
+
+
+
+
+select sum(cena) from koupil where login = 'kasa'
+
+
+select * from koupil,vyrobek where vyrobek.jmeno = 'stolicka'
+
+
+
+select sum(cena) from uzivatel,koupil,vyrobek where vyrobek.jmeno = 'stolicka' 
+
+
+
+select * from uzivatel join koupil on uzivatel.login = koupil.login join vyrobek on vyrobek.vid = koupil.vid where rok = 2009
+
+select vid,login from koupil order by vid,login
+
+select distinct koupil.vID from koupil where  koupil.login = 'vinetu' or  koupil.login = 'pepik'
+--select vid from vyrobek except select distinct koupil.vID from koupil where  koupil.login = 'vinetu' or  koupil.login = 'pepik'
+
+select vyrobek.vid , uzivatel.mesto from uzivatel join koupil on uzivatel.login = koupil.login join vyrobek on vyrobek.vid = koupil.vid order by vyrobek.vID
+
+
+
+select distinct vyrobek.vid , uzivatel.login from uzivatel join koupil on uzivatel.login = koupil.login join vyrobek on vyrobek.vid = koupil.vid order by uzivatel.login,vyrobek.vid
+
+
+select distinct vyrobek.vid , uzivatel.login ,koupil.cena from uzivatel join koupil on uzivatel.login = koupil.login join vyrobek on vyrobek.vid = koupil.vid order by vyrobek.vid,koupil.cena,uzivatel.login
+
+
+select distinct koupil.vID from koupil except select vid from koupil where koupil.login = 'vinetu'
+
+select distinct login from koupil where vid in (2,3,4,5,7,8)
+

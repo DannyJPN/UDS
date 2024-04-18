@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="07DFC382-BB98-8D05-ADF0-0171B5BA002B" name="Kraj">
+<createdBy>Dan Krupa</createdBy>
+<createdTime>2019-04-02 05:28:18 UTC</createdTime>
+<ownerDesignName>Project</ownerDesignName>
+<engineerTo>
+<item key="6388F856-2FE0-F69F-2FBF-9A0250BC3EB0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="zkratka" id="86B5CE04-6786-CC06-6211-9031A855D660">
+<createdBy>Dan Krupa</createdBy>
+<createdTime>2019-04-02 05:28:26 UTC</createdTime>
+<ownerDesignName>Project</ownerDesignName>
+<engineerTo>
+<item key="6388F856-2FE0-F69F-2FBF-9A0250BC3EB0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT035</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nazev" id="0A066C95-9828-F31F-8607-36042737A235">
+<createdBy>Dan Krupa</createdBy>
+<createdTime>2019-04-02 05:28:52 UTC</createdTime>
+<ownerDesignName>Project</ownerDesignName>
+<engineerTo>
+<item key="6388F856-2FE0-F69F-2FBF-9A0250BC3EB0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="787D1433-9875-F40F-FE57-9B8CEF98C85E" name="Kraj PK">
+<createdBy>Dan Krupa</createdBy>
+<createdTime>2019-04-02 05:28:49 UTC</createdTime>
+<ownerDesignName>Project</ownerDesignName>
+<engineerTo>
+<item key="6388F856-2FE0-F69F-2FBF-9A0250BC3EB0" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>86B5CE04-6786-CC06-6211-9031A855D660</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
